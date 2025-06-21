@@ -85,9 +85,9 @@ def solve_captcha():
         elif method == "recaptchaV3":
             method = "Recaptcha V3"
 
-        return jsonify({'status': 'success', 'service': method,  'message': 'dc: @._uno3117 and t.me/zynnkys is here', 'result': result})
+        return jsonify({'status': 'success', 'service': method,  'message': 'pogi', 'result': result})
     except Exception as e:
-        return jsonify({'status': 'Failed / Error', 'service': method, 'message': 'dc: @._uno3117 and t.me/zynnkys is here', 'Response': str(e)}), 500
+        return jsonify({'status': 'Failed / Error', 'service': method, 'message': 'failed', 'Response': str(e)}), 500
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
